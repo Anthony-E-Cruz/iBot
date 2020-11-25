@@ -6,7 +6,7 @@ module.exports = function (controller) {
     eduObj: {
       name: "App Academy",
       degree: "Full Stack Development",
-      timeline: "April 2020 - July 2020",
+      timeline: "May 2020 - August 2020",
     },
   };
   let education = new BotkitConversation(["education"], controller);
@@ -116,7 +116,7 @@ module.exports = function (controller) {
   controller.addDialog(school);
 
   controller.hears(
-    ["Nassau Community College", "ncc", "nassau"],
+    ["Queens College", "queens", "cuny"],
     "message",
     async (bot, message) => {
       state.schoolName = message.text;
@@ -151,7 +151,7 @@ module.exports = function (controller) {
   schoolTwo.addAction("last_thread", "next_thread");
   schoolTwo.addMessage({ type: "typing" }, "schoolTwo");
   schoolTwo.addMessage(
-    `I studied here from September 2017 - December 2019`,
+    `I studied here from August 2016 - June 2018`,
     "last_thread"
   );
 

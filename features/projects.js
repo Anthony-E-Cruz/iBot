@@ -61,7 +61,7 @@ module.exports = function (controller) {
   project1.addAction("last_thread", "middle_thread");
   project1.addMessage({ type: "typing" }, "project1");
   project1.addMessage(
-    `Here's a link to my project <a>${resumeProjects.project1.link}</a>`,
+    `Here's a link to my <a href=${resumeProjects.project1.link} target="_blank">project</a>`,
     "last_thread"
   );
 
@@ -99,7 +99,7 @@ module.exports = function (controller) {
   project2.say({ type: "typing" });
   project2.addAction("project2");
   project2.addMessage(
-    `I built ${resumeProjects.project2.name} using ${resumeProjects.project2.technologies}`,
+    `${resumeProjects.project2.name} is a group project we built using ${resumeProjects.project2.technologies}`,
     "next_thread"
   );
   project2.addAction("next_thread", "project2");
@@ -115,7 +115,7 @@ module.exports = function (controller) {
   project2.addAction("last_thread", "middle_thread");
   project2.addMessage({ type: "typing" }, "project2");
   project2.addMessage(
-    `Here's a link to my project <a>${resumeProjects.project2.link}</a>`,
+    `Here's a link to our <a href=${resumeProjects.project2.link} target="_blank">project</a>`,
     "last_thread"
   );
 
@@ -169,7 +169,7 @@ module.exports = function (controller) {
   project3.addAction("last_thread", "middle_thread");
   project3.addMessage({ type: "typing" }, "project3");
   project3.addMessage(
-    `Here's a link to my project <a>${resumeProjects.project3.link}</a>`,
+    `Here's a link to my <a href=${resumeProjects.project3.link} target="_blank">project</a>`,
     "last_thread"
   );
 

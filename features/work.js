@@ -59,7 +59,7 @@ module.exports = function (controller) {
   job1.say({ type: "typing" });
   job1.addAction("job1");
   job1.addMessage(
-    `During my time at ${resumeJob.job1.name} i was an ${resumeJob.job1.title}.`,
+    `During my time at ${resumeJob.job1.name} i was a ${resumeJob.job1.title}.`,
     "next_thread"
   );
   job1.addAction("next_thread", "job1");
@@ -111,7 +111,7 @@ module.exports = function (controller) {
   job2.say({ type: "typing" });
   job2.addAction("job2");
   job2.addMessage(
-    `During my time at ${resumeJob.job2.name} I was a ${resumeJob.job2.title}`,
+    `During my time at ${resumeJob.job2.name} I was an ${resumeJob.job2.title}`,
     "next_thread"
   );
   job2.addAction("next_thread", "job2");
