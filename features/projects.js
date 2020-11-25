@@ -116,7 +116,7 @@ module.exports = function (controller) {
   project2.addMessage({ type: "typing" }, "project2");
   project2.addMessage(
     `Here's a link to our <a href=${resumeProjects.project2.link} target="_blank">project</a>`,
-    "last_thread"
+    "last_thread" 
   );
 
   project2.before("next_thread", async () => {
